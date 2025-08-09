@@ -874,3 +874,185 @@
         font-size: 0.8rem;
     }
 }
+
+
+/* Extra Small Mobile Devices */
+@media (max-width: 370px) {
+    .main {
+        padding: 1.5rem 2vw;
+    }
+
+    .main-featured-products {
+        padding: 2rem 2% 1rem;
+    }
+
+    .main-featured-title {
+        font-size: 1.8rem;
+    }
+
+    .main-featured-description {
+        font-size: 0.9rem;
+    }
+
+
+    .main-featured-products-container {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .category-btn {
+        max-width: 180px;
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .product-info {
+        padding: 0.8rem;
+    }
+
+    .product-info-image img {
+        height: 120px;
+    }
+
+    .product-title {
+        font-size: 0.85rem;
+    }
+
+    .add-to-cart-btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .product-price {
+        font-size: 0.8rem;
+    }
+
+    .product-rating {
+        font-size: 0.8rem;
+    }
+
+    .promo-content {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    /* Hide images on very small mobile */
+    .promo-img {
+        display: none;
+    }
+
+    .promo-details {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .discount {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .promo-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .promo-desc {
+        font-size: 0.85rem;
+    }
+
+    .claim-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+        width: 160px;
+    }
+
+    .promo-badge {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* mini-category-card  */
+    .mini-category-card {
+        min-width: 140px;
+        max-width: 140px;
+    }
+
+    .mini-category-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 640px) {
+    .mini-category-list {
+        gap: 1.5rem;
+    }
+
+    .mini-category-card {
+        min-width: 160px;
+        max-width: 160px;
+    }
+
+    .mini-category-card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .mini-category-title {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .our-doctors {
+        padding: 4rem 8vw;
+    }
+
+    .our-doctors-title {
+        font-size: 2rem;
+    }
+
+    .our-doctors-description {
+        font-size: 1rem;
+    }
+
+    .our-doctors-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-doctors-gallery img {
+        height: 200px;
+    }
+
+    .appointment-form {
+        padding: 2rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .form-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        padding: 2rem 4rem;
+    }
+
+    .logo {
+        font-size: 2.8rem;
+    }
+}
