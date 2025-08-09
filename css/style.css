@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Primary Colors */
+    --primary: #6c47ff;
+    --secondary: #f7b801;
+    --accent: #ffeedd;
+
+    /* Background Colors */
+    --nav-bg: #fff;
+    --hero-bg: linear-gradient(120deg, #f8f7fd 65%, #ffeedd 100%);
+    --main-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f1f3f4 100%);
+    --card-bg: #ffffff;
+    --image-bg: #f8f9fa;
+
+    /* Text Colors */
+    --text: #22223b;
+    --text-light: #6b6b6b;
+    --text-white: #ffffff;
+    --text-dark: #121212;
+
+    /* Interactive Colors */
+    --orange: #ff7b29;
+    --orange-light: #f7be15;
+    --orange-dark: #e7ae03;
+
+    /* Effects */
+    --shadow: 0 4px 24px 0 rgba(108, 71, 255, .08);
+    --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.1);
+    --shadow-light: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-product: 0 2px 6px rgba(255, 193, 7, 0.4);
+
+    /* Sizing */
+    --radius: 2.2rem;
+    --radius-medium: 20px;
+    --radius-small: 15px;
+    --radius-button: 2em;
+
+    /* Transitions */
+    --transition: 0.18s cubic-bezier(.4, 0, .2, 1);
+    --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: 0.15s;
+
+    /* Borders */
+    --border: 1.5px solid;
+    --border-light: 1px solid rgba(255, 123, 41, 0.1);
+    --border-white: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Generic Resets ========== */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--hero-bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Manrope', sans-serif;
+
+
+
+}
+
+/* ========== Header & Navigation ========== */
+header {
+    width: 100%;
+    background: transparent;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 8vw 1.2rem 8vw;
+    position: relative;
+    z-index: 1000;
+    transition: box-shadow 0.2s;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-size: 2.2rem;
+    color: var(--primary);
+    letter-spacing: 2px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    user-select: none;
+}
+
+.logo .dot {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.2em 0.5em;
+    border-radius: 12px;
+    position: relative;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2.5px;
+    background: var(--secondary);
+    border-radius: 2px;
+    transition: width .29s cubic-bezier(.4, 0, .2, 1);
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.btn {
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: var(--radius-button);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background var(--transition), color var(--transition), border var(--transition);
+    outline: none;
+}
+
+.btn-login {
+    background: transparent;
+    color: var(--primary);
+    border: var(--border) var(--primary);
+}
+
+.btn-login:hover,
+.btn-login:focus {
+    background: var(--primary);
+    color: var(--text-white);
+    border-color: var(--primary);
+}
+
+.btn-signup {
+    background: var(--primary);
+    color: var(--text-white);
+    border: var(--border) var(--primary);
+}
+
+.btn-signup:hover,
+.btn-signup:focus {
+    background: var(--secondary);
+    color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary);
+    transition: color var(--transition);
+    margin-left: 1rem;
+}
+
+.menu-btn:focus {
+    outline: 2px solid var(--secondary);
+}
+
+/* ========== Hero Section ========== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3.5rem 8vw 2.5rem 8vw;
+    min-height: 70vh;
+    background: var(--hero-bg);
+    border-radius: 0 0 var(--radius) var(--radius);
+    box-shadow: var(--shadow);
+    margin-top: 1.2rem;
+}
+
+.hero-content {
+    max-width: 540px;
+    flex: 1 1 50%;
+}
+
+.hero-title {
+    font-size: clamp(2.3rem, 6vw, 3.3rem);
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    color: var(--primary);
+}
+
+.hero-title-highlight {
+    color: var(--secondary);
+    font-weight: 900;
+}
+
+.hero-description {
+    font-size: 1.17rem;
+    color: var(--text-light);
+    margin-bottom: 2.1rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: var(--primary);
+    font-weight: 700;
+    box-shadow: 0 2px 12px 0 #f7b80122;
+    border: var(--border) var(--secondary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--primary);
+    color: var(--text-white);
+    border: var(--border) var(--primary);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: var(--border) var(--primary);
+    font-weight: 600;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background: var(--primary);
+    color: var(--text-white);
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 32px #6c47ff22);
+    padding: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
