@@ -549,3 +549,105 @@ header {
 .product-card[data-category="Cat"] {
     display: block;
 }
+
+/* ========== Promo Offer Section ========== */
+.promo-offer {
+    width: 100%;
+    background: var(--main-bg);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(108, 71, 255, 0.09);
+    margin: 0 auto;
+    max-width: 1800px;
+    margin-top: 1.5rem;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.promo-img {
+    flex: 1 1 170px;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-img img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.promo-details {
+    flex: 2 1 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.promo-badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.discount {
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding: 0.6rem 1.3rem;
+}
+
+.claim-btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+    font-size: 1.03rem;
+    font-weight: 600;
+    padding: 0.7rem 1.9rem;
+    box-shadow: 0 2px 8px #6c47ff2a;
+    cursor: pointer;
+    transition: background 0.16s, color 0.16s, transform 0.14s, box-shadow 0.14s;
+    outline: none;
+    letter-spacing: 0.4px;
+}
+
+.claim-btn:hover,
+.claim-btn:focus {
+    background: #f7b801;
+    color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px #f7b8012a;
+}
+
+.promo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.promo-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.promo-desc {
+    font-size: 1.07rem;
+    color: #22223b;
+    opacity: 0.92;
+    margin-bottom: 0.1rem;
+    max-width: 400px;
+}
