@@ -41,6 +41,58 @@
 
 <body>
 
+    
+    <!-- Main header containing navigation and hero section -->
+    <header>
+        <!-- Primary navigation bar with logo, menu links, and authentication buttons -->
+        <nav class="navbar">
+            <!-- Brand logo with decorative dot -->
+            <h1 class="logo">Petty<span class="dot">.</span></h1>
+
+            <!-- Main navigation links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Consult</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Authentication buttons for user login/signup -->
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+
+            <!-- Mobile menu toggle button with accessibility label -->
+            <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Hero section with main call-to-action and featured image -->
+        <section class="hero">
+            <!-- Hero content with title, description, and action buttons -->
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-highlight">Take</span> Care of <br>Your
+                    <span class="hero-title-highlight">Lovely</span> Pet
+                </h1>
+                <p class="hero-description">
+                    Buy your pet supplies right now at our shop before the products run out.
+                </p>
+                <!-- Primary action buttons -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Explore More</button>
+                </div>
+            </div>
+            <!-- Hero image showcasing happy pet with owner -->
+            <div class="hero-image">
+                <img src="images/pexels-shootsaga-30689866-removebg-preview.webp" alt="Happy pet with owner"
+                    loading="lazy">
+            </div>
+        </section>
+    </header>
 
       <!-- JavaScript file for interactive functionality  -->
     <script src="js/script.js"></script>
