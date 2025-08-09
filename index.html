@@ -94,6 +94,410 @@
         </section>
     </header>
 
+       <!-- Main content area containing product sections -->
+    <main class="main">
+        <!-- Featured products section with category filtering and product grid -->
+        <section class="main-featured-products" aria-labelledby="main-featured-title">
+            <!-- Section header with title and description -->
+            <header class="main-featured-header">
+                <h2 id="main-featured-title" class="main-featured-title">Recently Added</h2>
+                <p class="main-featured-description">
+                    Explore our latest products that have just arrived in our shop.
+                </p>
+            </header>
+
+            <!-- Product controls: category filters and navigation arrows -->
+            <div class="main-featured-products-container">
+                <!-- Category filter buttons with accessibility support -->
+                <nav class="main-featured-product-category" aria-label="Product categories">
+                    <button type="button" class="category-btn" aria-pressed="true">Cat</button>
+                    <button type="button" class="category-btn" aria-pressed="false">Dog</button>
+                    <button type="button" class="category-btn" aria-pressed="false">Rabbit</button>
+                    <button type="button" class="category-btn" aria-pressed="false">Bird</button>
+                </nav>
+
+                <!-- Product navigation arrows for pagination -->
+                <div class="arrow" aria-label="Product navigation">
+                    <button class="arrow-left" aria-label="Previous products">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="arrow-right" aria-label="Next products">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product grid containing all categorized products -->
+            <div class="main-featured-products-list">
+                <!-- Cat Products Section -->
+                <!-- Each product card contains image, title, price, rating, and add-to-cart functionality -->
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/bestpet5-1-327975-removebg-preview.webp" alt="Cat Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Bestpet Salmon</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$29.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Additional Cat Products -->
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/71D58ZRpqQL._AC_SX679_.webp" alt="Cat Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Flex Kitten Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$20.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/رويال-كانين-بيرشن-removebg-preview.webp" alt="Cat Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Persian Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$9</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/رويال-كانين-أورال-removebg-preview.webp" alt="Cat Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Oral Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/دراي-رويال-كانين-فيت-removebg-preview.webp" alt="Cat Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Fit Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.9</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/رويال-كانين-هير-اند-سكين-removebg-preview.webp" alt="Cat Food"
+                                loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Hair&Skin Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$30</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/دراي-رويال-كانين-سينسيبل-removebg-preview.webp" alt="Cat Food"
+                                loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$7</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Cat">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/رويال-كانين-أورال-removebg-preview (1).webp" alt="Cat Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Digest Cat Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Cat Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$17</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dog Products Section -->
+                <article class="product-card" data-category="Dog">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/8906002482832_325256e8-336f-4804-a01c-8e4351d124b7-removebg-preview.webp"
+                                alt="Dog Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Dog Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Dog">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/Sara_sbuttermilkcurved_b3dbbdd5-e335-4be3-88ea-22dc56216b5e-removebg-preview.webp"
+                                alt="Dog Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Dog Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Dog">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/8906002482832_325256e8-336f-4804-a01c-8e4351d124b7-removebg-preview.webp"
+                                alt="Dog Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Dog Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Rabbit Products Section -->
+                <article class="product-card" data-category="Rabbit">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/5f03eb64-9361-4223-97e2-df42e136fdbd_1.1b374bdae8f3b196b61163eafcd090cd-removebg-preview (1).webp"
+                                alt="Rabbit Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Rabbit Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Rabbit">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/MENU-Premium-Rabbit-Food-Timothy-Hay-Pellets-Blend-Vitamin-Mineral-Fortified-4-lb-Bag_4c84c114-6606-4238-b619-be8088242ddd.fdfd6c9cb93342d5f37ae8886bb27b51-removebg-preview.webp"
+                                alt="Rabbit Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Rabbit Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Rabbit">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/Menu-Premium-Guinea-Pig-Food-Timothy-Hay-Pellets-Blend-Vitamin-and-Mineral-Fortified-4Lb_4aa2fb82-f7b4-4084-bf46-82779824547a.bf684599a8c934ae7ded7d0db31b3a8d-removebg-preview.webp"
+                                alt="Rabbit Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Rabbit Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Rabbit">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/Menu-Premium-Guinea-Pig-Food-Timothy-Hay-Pellets-Blend-Vitamin-and-Mineral-Fortified-4Lb_4aa2fb82-f7b4-4084-bf46-82779824547a.bf684599a8c934ae7ded7d0db31b3a8d-removebg-preview.webp"
+                                alt="Rabbit Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Rabbit Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$19.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bird Products Section -->
+                <article class="product-card" data-category="Bird">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/81CmaJZgqKL.__AC_SX300_SY300_QL70_FMwebp_-removebg-preview.webp"
+                                alt="Bird Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Bird Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="Bird">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/81CmaJZgqKL.__AC_SX300_SY300_QL70_FMwebp_-removebg-preview.webp"
+                                alt="Bird Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Bird Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Bird">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/81CmaJZgqKL.__AC_SX300_SY300_QL70_FMwebp_-removebg-preview.webp"
+                                alt="Bird Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Bird Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Bird">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/81CmaJZgqKL.__AC_SX300_SY300_QL70_FMwebp_-removebg-preview.webp"
+                                alt="Bird Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Bird Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Bird">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/81CmaJZgqKL.__AC_SX300_SY300_QL70_FMwebp_-removebg-preview.webp"
+                                alt="Bird Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Bird Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="Bird">
+                    <div class="product-info">
+                        <div class="product-info-image">
+                            <img src="images/81CmaJZgqKL.__AC_SX300_SY300_QL70_FMwebp_-removebg-preview.webp"
+                                alt="Bird Food" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Royal Canin Sensible Bird Food</h3>
+                            <button class="add-to-cart-btn" aria-label="Add Royal Canin Sensible Dog Food to cart">Add
+                                To Cart</button>
+                            <div class="product-meta">
+                                <span class="product-price">$10.99</span>
+                                <span class="product-rating" aria-label="5 stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
       <!-- JavaScript file for interactive functionality  -->
     <script src="js/script.js"></script>
 </body>
