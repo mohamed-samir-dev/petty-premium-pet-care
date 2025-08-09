@@ -673,6 +673,60 @@
                 </div>
             </div>
         </section>
+         <!-- our-doctors -->
+        <section class="our-doctors">
+            <h2 class="our-doctors-title">Our Doctor Consultant</h2>
+            <p class="our-doctors-description">
+                We have a team of experienced and qualified doctors who are dedicated to providing the best possible
+                care for your pet.
+            </p>
+
+            <div class="our-doctors-container">
+                <!-- Doctors Gallery -->
+                <div class="our-doctors-gallery">
+                    <img src="images/veterinarian-examining-golden-retriever-s-paw.webp"
+                        alt="Doctor examining Golden Retriever">
+                    <img src="images/vet-doing-routine-examination.webp" alt="Doctor doing routine examination"
+                        loading="lazy">
+                    <img src="images/handsome-veterinarian-vet-clinic-examining-cute-black-pug-dog-pointing-finger-pet-check-up-with-stethoscope-white-background.webp"
+                        loading="lazy" alt="Doctor checking a pug dog">
+                    <img src="images/front-view-female-veterinarian-observing-little-dog-yellow-wall.webp"
+                        loading="lazy" alt="Female vet observing a small dog">
+                </div>
+
+                <!-- Appointment Form -->
+                <div class="appointment-form">
+                    <h3 class="form-title">Book an Appointment</h3>
+                    <p class="form-subtitle">Fill out the form below to schedule an appointment with one of our doctors.
+                    </p>
+                    <form action="https://formspree.io/f/xqknljdp" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Notes</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us more about your pet..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
       <!-- JavaScript file for interactive functionality  -->
     <script src="js/script.js"></script>
