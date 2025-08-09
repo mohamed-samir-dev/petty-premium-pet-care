@@ -648,3 +648,229 @@
     }
 
 }
+
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(2.2rem, 5vw, 2.2rem);
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+        padding: 0.5rem;
+    }
+
+    /* mini-category-list */
+    .mini-category-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem;
+        padding-bottom: 0.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .mini-category-card {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .mini-category-card img {
+        width: 130px;
+        height: 130px;
+    }
+}
+/* Standard Mobile Devices */
+@media (max-width: 575px) and (min-width: 375px) {
+    .main {
+        padding: 2.5rem 4vw;
+    }
+
+    .main-featured-products {
+        padding: 2.5rem 3% 1.5rem;
+    }
+
+    .main-featured-header {
+        margin-bottom: 2rem;
+    }
+
+    .main-featured-title {
+        font-size: 2rem;
+    }
+
+    .main-featured-description {
+        font-size: 0.95rem;
+    }
+
+    .main-featured-products-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .main-featured-product-category {
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .category-btn {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+
+    }
+
+    .arrow {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1rem;
+    }
+
+    .main-featured-products-list {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .product-info {
+        padding: 1rem;
+    }
+
+    .product-info-image {
+        margin-bottom: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .product-info-image img {
+        height: 140px;
+    }
+
+    .product-details {
+        gap: 0.8rem;
+    }
+
+    .product-title {
+        font-size: 0.9rem;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .product-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+        padding-top: 0.6rem;
+    }
+
+    .product-price {
+        font-size: 0.85rem;
+    }
+
+    .product-rating {
+        font-size: 0.85rem;
+    }
+
+
+
+    .promo-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+    /* Hide images on small mobile */
+    .promo-img {
+        display: none;
+    }
+
+    .promo-details {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .discount {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .promo-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .promo-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .claim-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        width: 180px;
+    }
+
+    .our-doctors {
+        padding: 2rem 4vw;
+    }
+
+    .our-doctors-title {
+        font-size: 1.5rem;
+    }
+
+    .our-doctors-description {
+        font-size: 0.9rem;
+    }
+
+    .our-doctors-gallery {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
+
+    .our-doctors-gallery img {
+        height: 150px;
+
+    }
+
+    .appointment-form {
+        padding: 1.5rem;
+    }
+
+    .form-title {
+        font-size: 1.25rem;
+    }
+
+    .form-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        padding: 1rem 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
