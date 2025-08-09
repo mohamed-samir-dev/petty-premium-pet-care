@@ -68,3 +68,44 @@ document.querySelector('.arrow-right').addEventListener('click', () => {
 
 filterProducts(currentCategory);
 
+
+
+//  Handles quantity and dynamic price calculation for mini-category cards
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.mini-category-quantity').forEach(wrapper => {
+    const minusBtn = wrapper.querySelector('.mini-btn.minus');
+    const plusBtn = wrapper.querySelector('.mini-btn.plus');
+    const numberSpan = wrapper.querySelector('.number');
+    const priceSpan = wrapper.querySelector('.product-price');
+
+    let pricePerUnit = 0;
+    if (priceSpan.dataset && priceSpan.dataset.pricePerUnit) {
+      pricePerUnit = parseFloat(priceSpan.dataset.pricePerUnit) || 0;
+    } else {
+      const match = priceSpan.textContent.match(/\$([\d.]+)/);
+      pricePerUnit = match ? parseFloat(match[1]) : 0;
+      priceSpan.dataset.pricePerUnit = pricePerUnit;
+    }
+
+    function updatePrice() {
+      const quantity = parseInt(numberSpan.textContent, 10);
+      priceSpan.textContent = `$${(pricePerUnit * quantity).toFixed(2)}`;
+    }
+
+    minusBtn.addEventListener('click', () => {
+      let quantity = parseInt(numberSpan.textContent, 10);
+      if (quantity > 0) {
+        numberSpan.textContent = quantity - 1;
+        updatePrice();
+      }
+    });
+
+    plusBtn.addEventListener('click', () => {
+      let quantity = parseInt(numberSpan.textContent, 10);
+      numberSpan.textContent = quantity + 1;
+      updatePrice();
+    });
+
+    updatePrice();
+  });
+});
